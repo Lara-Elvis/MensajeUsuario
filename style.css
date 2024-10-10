@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+        "encabezado encabezado encabezado"
+        "mensajes login estadisticas"
+        "pie pie pie";
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    gap: 10px;
+    padding: 20px;
+}
+
+.encabezado {
+    grid-area: encabezado;
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.mensajes {
+    grid-area: mensajes;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.mensaje {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.login {
+    grid-area: login;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.login input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+}
+
+button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.nuevo-usuario {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 0.9em;
+    text-decoration: none;
+    color: #333;
+}
+
+.nuevo-usuario:hover {
+    text-decoration: underline;
+}
+
+.estadisticas {
+    grid-area: estadisticas;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.pie {
+    grid-area: pie;
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+}

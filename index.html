@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Inicio de Sesión</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="encabezado">
+            <h1>Encabezado</h1>
+        </header>
+
+        <aside class="mensajes">
+            <h2>Últimos mensajes</h2>
+            <div class="mensaje">
+                <p>@usuario</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis odio diam.</p>
+                <p>(fecha)</p>
+            </div>
+            <div class="mensaje">
+                <p>@usuario</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis odio diam.</p>
+                <p>(fecha)</p>
+            </div>
+            <div class="mensaje">
+                <p>@usuario</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis odio diam.</p>
+                <p>(fecha)</p>
+            </div>
+        </aside>
+
+        <main class="login">
+            <h2>Inicio de sesión</h2>
+            <form>
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" name="usuario">
+                
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password">
+                
+                <p class="error-message">[Mensaje de error si la combinación usuario y contraseña no existe]</p>
+                
+                <button type="submit">Ingresar</button>
+                
+                <a href="#" class="nuevo-usuario">Nuevo usuario</a>
+            </form>
+        </main>
+
+        <aside class="estadisticas">
+            <h2>Estadísticas de uso:</h2>
+            <p>Cantidad de usuarios: [Cantidad de usuarios]</p>
+            <p>Cantidad de mensajes: [Cantidad de mensajes]</p>
+        </aside>
+
+        <footer class="pie">
+            <p>Pie de página</p>
+        </footer>
+    </div>
+</body>
+</html>
